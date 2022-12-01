@@ -1,0 +1,54 @@
+.flex_slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  color: snow;
+}
+.item{
+  height: 100vh;
+  background: #ccc;
+  flex-basis: 25%;
+/*   border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.item:hover{
+  flex-basis: 50%;
+  transition: all 0.4s;
+}
+.item span{
+  font-size: 2rem;
+  text-shadow: 0 0 10px #000;
+}
+.item1{
+  background: url('https://images.news18.com/ibnlive/uploads/2017/06/avatar.jpg?im=FitAndFill,width=1200,height=1200') no-repeat center center;
+  background-size: cover;
+  
+}
+.item2{
+  background: url('https://townsquare.media/site/442/files/2020/01/avatar-10-year.jpg?w=980&q=75') no-repeat center center;
+  background-size: cover;
+}
+.item3{
+  background: url('https://www.indiewire.com/wp-content/uploads/2020/06/shutterstock_editorial_5885988aj.jpg') no-repeat center center;
+  background-size: cover;
+}
+.item4{
+  background: url('https://static01.nyt.com/images/2022/09/11/arts/11NEWSEASON-AVATAR-EXPLAINER1/11NEWSEASON-AVATAR-EXPLAINER1-mediumSquareAt3X.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 640px){
+  .flex_slider{
+    flex-flow: column;
+    height: 100vh;
+  }
+  .item{
+    width: 100%;
+  }
+}
